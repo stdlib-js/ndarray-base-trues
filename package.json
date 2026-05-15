@@ -44,6 +44,7 @@
   "devDependencies": {
     "@stdlib/array-bool": "^0.1.2",
     "@stdlib/assert-instance-of": "^0.3.1",
+    "@stdlib/assert-is-equal-array": "^0.1.1",
     "@stdlib/assert-is-equal-booleanarray": "^0.1.1",
     "@stdlib/assert-is-ndarray-like": "^0.2.3",
     "@stdlib/math-base-special-pow": "^0.3.1",

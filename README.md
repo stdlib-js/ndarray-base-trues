@@ -89,7 +89,7 @@ var dt = String( getDType( arr ) );
 
 The function accepts the following arguments:
 
--   **dtype**: underlying [data type][@stdlib/ndarray/dtypes]. Must be a "boolean" [data type][@stdlib/ndarray/dtypes].
+-   **dtype**: underlying [data type][@stdlib/ndarray/dtypes]. Must be a boolean or "generic" [data type][@stdlib/ndarray/dtypes].
 -   **shape**: array shape.
 -   **order**: specifies whether an [ndarray][@stdlib/ndarray/base/ctor] is `'row-major'` (C-style) or `'column-major'` (Fortran-style).
 
@@ -118,6 +118,9 @@ var ndarray2array = require( '@stdlib/ndarray-to-array' );
 var trues = require( '@stdlib/ndarray-base-trues' );
 
 var arr = trues( 'bool', [ 2, 2 ], 'row-major' );
+console.log( ndarray2array( arr ) );
+
+arr = trues( 'generic', [ 2, 2 ], 'row-major' );
 console.log( ndarray2array( arr ) );
 ```
 
